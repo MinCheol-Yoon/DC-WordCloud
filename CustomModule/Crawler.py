@@ -3,10 +3,10 @@ import requests
 from bs4 import BeautifulSoup as bs4
 
 def Crawl():
-    f = open(os.path.join(os.path.dirname(__file__), "data.txt"), mode="w", encoding="utf-8")
+    f = open(os.path.join(os.path.dirname(__file__), "../Resource", "data.txt"), mode="w", encoding="utf-8")
     f.write("")
     f.close()
-    f = open(os.path.join(os.path.dirname(__file__), "data.txt"), mode="at", encoding="utf-8")
+    f = open(os.path.join(os.path.dirname(__file__), "../Resource", "data.txt"), mode="at", encoding="utf-8")
 
     # User-Agent 설정
     headers = {"User-Agent" : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36"}
